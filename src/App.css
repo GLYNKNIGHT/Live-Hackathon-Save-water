@@ -1,9 +1,22 @@
 
 body{
-
-  margin: 5vh auto;
+border: solid black 1px;
+  margin: 0 auto;
   width: 428px;
-  height: 926px;
+  height: 826px;
+  border-radius: 1em;
+  
+}
+
+.image-container{
+  display: flex;
+  flex-direction: column;
+  border-radius: 1em;
+  margin: 0 auto;
+  width: 428px;
+  height: 685px;
+  background-image: url(".././public/background.png")
+
 }
 
 .main-image{
@@ -12,17 +25,19 @@ body{
 
 
 .title{
+  display: flex;
+justify-content: center;
+align-items: center;
 width: 282px;
 height: 48px;
-top: 439px;
-margin: 0 auto;
+margin: 439px 85px 0px 85px ;
 font-family: 'Inter';
 font-style: normal;
 font-weight: 700;
 font-size: 40px;
 line-height: 48px;
 
-color: 000000;
+color: #ffffff;
 }
 
 .tag-line{
@@ -39,5 +54,90 @@ color: 000000;
   line-height: 29px;
   text-align: center;
   
-  color: #00000;
+  color: #ffffff;
+}
+
+.info{
+  border: solid black 1px;
+  margin: 0 auto;
+  width: 428px;
+  height: 826px;
+  border-radius: 1em;
+}
+
+.carousel {
+  height: 28vh;
+
+}
+
+.card{
+
+  margin: 10px;
+  height: 25vh;
+  
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.card-image{
+  margin-top: 25%;
+ max-width: 100%;
+  object-fit: contain;
+}
+.info-top-image {
+  display: flex;
+  justify-content: center;
+  margin:5vh auto;
+}
+
+.info-tag-line{
+  background-color: black;
+ color: white ;
+ text-align: center;
+ padding: 15px;
+ font-family: Inter, sans-serif;
+ font-size: 20px;
+}
+
+.finish-button{
+  border: solid black 3px;
+  border-radius: 0.5em;
+  height: 40px;
+  width: 150px;
+  background-color: #ffffff;
+  font-size: Inter, sans-serif;
+  font-size: 20px;
+  margin: 80px 0 0 140px
+}
+
+.articles{
+  display: flex;
+  position: absolute;
+  z-index: 5;
+  top:0;
+  margin: 100px 0 0 40px;
+  background-color: white;
+  height: 70vh;
+  width: 350px;
+  border-radius: 1em;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.article-display{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow-y: scroll;
+  width:100%
+ 
+  
+} 
+
+::-webkit-scrollbar { display: none; }
+
+.article-card{
+  border-radius: 6px;
+  min-height: 20%;
+  margin: 15px 0;
+  background-color: #ffffff;
+  width: 80%;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }

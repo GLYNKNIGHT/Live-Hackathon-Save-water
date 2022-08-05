@@ -1,5 +1,5 @@
 import './App.css';
-import {useState} from 'react'
+import {useState, useEffect} from 'react'
 import MyCarousel from './components/carousel';
 import FinishButton from './components/finishButton';
 import ArticleDisplay from './components/articleDisplay';
@@ -7,7 +7,24 @@ import ArticleDisplay from './components/articleDisplay';
 function App() {
  const [openInfo, setOpenInfo] = useState(false)
  const [articles, setArticles] = useState(false) 
- 
+ const [urlState, setUrlState] = useState("")
+
+ useEffect(() => {
+  const fetchData = async () => {
+    const url = `https://localhost/5000`;
+    try {
+      const response = await fetch(url);
+      const data = await response.json();
+      
+    } catch (error) {
+      console.log('error', error);
+    }
+  };
+
+  fetchData();
+}, []);
+
+
 function closeAll(){
   setOpenInfo(false)
   setArticles(false)
